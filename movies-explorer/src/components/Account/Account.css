@@ -1,0 +1,23 @@
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s, opacity 0.5s;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 12px;
+}
+.account:hover {
+  opacity: 0.6;
+}
+
+.account__img {
+  background: #313131 url(../../images/account.svg) no-repeat center;
+  border-radius: 50px;
+  width: 26px;
+  height: 26px;
+  margin-left: 7px;
+}

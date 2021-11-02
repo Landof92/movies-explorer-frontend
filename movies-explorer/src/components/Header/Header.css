@@ -1,0 +1,123 @@
+.header {
+  background: #202020;
+  min-height: 74px;
+  padding: 0 74px 0 70px;
+}
+.header__container {
+  max-width: 1140px;
+  margin: auto;
+}
+.header_theme_main {
+  background: #073042;
+}
+.header__nav {
+  max-width: 1140px;
+  padding: 18px 0 18px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-left {
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  flex-basis: 100%;
+  margin-left: 44px;
+}
+.header__nav-right {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+}
+.header__nav-right-mobile {
+  display: none;
+}
+.header__nav-button {
+  background: url(../../images/guard.svg) no-repeat center;
+  width: 44px;
+  height: 44px;
+  display: block;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.header__nav-button:hover {
+  opacity: 0.6;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: color 0.5s, opacity 0.5s;
+}
+.header__link:hover {
+  opacity: 0.6;
+}
+.header__link:last-child {
+  margin: 0;
+}
+.header__link-container {
+  display: flex;
+}
+.header_link_inactive {
+  font-weight: normal;
+}
+.header_link_theme_authorized {
+  margin-right: 18px;
+}
+.header_link_theme_button {
+  background: #3ddc84;
+  border-radius: 3px;
+  color: #000000;
+  min-width: 76px;
+  min-height: 32px;
+}
+.header_link_theme_button:hover {
+  color: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header__nav-left {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header__nav-right-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header__account {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 0 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__link {
+    min-width: 54px;
+    min-height: 26px;
+    margin-right: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__nav-button {
+    background-image: url(../../images/icon__COLOR_icon-main.svg);
+    width: 40px;
+    height: 43px;
+  }
+}
