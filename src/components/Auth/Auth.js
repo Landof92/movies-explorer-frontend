@@ -15,7 +15,7 @@ const Auth = (props) => {
         <form className="auth__form">
           {props.children}
         </form>
-        <ButtonForm buttonText={props.buttonText} />
+        <ButtonForm buttonText={props.buttonText} buttonlink={props.buttonlink} />
         <nav className="auth__nav">
           <p className="auth__nav-text">{props.question}</p>
           <Link to={props.link} className="auth__nav-link">{props.linkText}</Link>
