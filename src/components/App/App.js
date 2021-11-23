@@ -18,7 +18,6 @@ import { useHistory } from "react-router-dom";
 import MainApi from "../../utils/MainApi";
 import MoviesApi from "../../utils/MoviesApi";
 import AuthRoute from "../AuthRoute";
-import { useEffect } from "react/cjs/react.development";
 
 function App() {
   const localUser = JSON.parse(window.localStorage.getItem("user"));
@@ -187,7 +186,7 @@ function App() {
       });
   }
 
-  useEffect(() => {
+  React.useEffect(() => {
     MainApi.getUserInfo()
       .then((res) => {
         setCurrentUser(res);
