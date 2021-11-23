@@ -13,7 +13,7 @@
   margin: 40px 0 30px;
 }
 .auth__form {
-  margin-bottom: 44px;
+  margin-bottom: 7px;
   width: 100%;
   min-height: 300px;
 }
@@ -57,7 +57,7 @@
 }
 @media screen and (max-width: 767px) {
   .auth__form {
-    margin-bottom: 132px;
+    margin-bottom: 97px;
   }
 }
 @media screen and (max-width: 767px) {

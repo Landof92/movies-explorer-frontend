@@ -36,7 +36,6 @@
 .search-form__input::placeholder {
   color: #8b8b8b;
 }
-
 .search-form__button {
   background: #4285f4 url(../../images/arrow.svg) no-repeat center;
   border-radius: 48px;
@@ -67,6 +66,13 @@
 }
 .search-form .switch_mobile {
   display: none;
+}
+.search-form__error {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ee3465;
+  text-align: center;
 }
 @media screen and (max-width: 1023px) {
   .search-form {

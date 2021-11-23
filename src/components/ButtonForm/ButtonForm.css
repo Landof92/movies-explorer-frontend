@@ -1,4 +1,13 @@
 .button-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 82px;
+}
+
+.button-form-button {
   box-sizing: border-box;
   background: #4285f4;
   border: none;
@@ -12,15 +21,33 @@
   height: 45px;
   width: 100%;
   color: #ffffff;
+  margin-top: 20px;
 }
-.button-form:hover,
+.button-form-button:hover,
 :focus {
   cursor: pointer;
   opacity: 0.6;
 }
+.button-form-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.button-form-err {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ee3465;
+}
 
 @media screen and (max-width: 767px) {
   .button-form {
+    min-width: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-form-button,
+  .button-form-err {
     font-size: 12px;
     line-height: 15px;
   }

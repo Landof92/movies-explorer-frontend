@@ -1,17 +1,20 @@
-import MoviesCardList from '../MoviesCardList/MoviesCardList';
-import SearchForm from '../SearchForm/SearchForm';
-import './SavedMovies.css';
+import MoviesCardList from "../MoviesCardList/MoviesCardList";
+import SearchForm from "../SearchForm/SearchForm";
+import "./SavedMovies.css";
 
-
-const SavedMovies = () => {
+const SavedMovies = (props) => {
   return (
-
     <section className="saved-movies">
-      <SearchForm />
-      <MoviesCardList />
+      <SearchForm getFilms={props.filterSavedMovies} isSavedPage />
+      <MoviesCardList
+        films={props.savedFilms}
+        savedFilms={props.savedFilms}
+        handleFilmDelete={props.handleFilmDelete}
+        asyncState={props.asyncState}
+        isSavedPage
+      />
     </section>
-
-  )
+  );
 };
 
 export default SavedMovies;
